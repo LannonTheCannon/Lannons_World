@@ -33,7 +33,7 @@ def display_home():
     st.subheader('Slow is smooth. Smooth is fast.')
 
     # Get the path to the image for the About Me section
-    about_image_path = os.path.join(os.path.dirname(__file__), "images", "boy_and_dog.png")
+    about_image_path = os.path.join(os.path.dirname(__file__), "images", "sunset.png")
 
     # Encode the image
     about_image_base64 = get_base64_of_bin_file(about_image_path)
@@ -48,11 +48,11 @@ def display_home():
             <div class="text-container">
                 <h3>About Me</h3>
                 <p>
-                As a Streamlit enthusiast and AI specialist, I create data-driven websites 
-                with integrated AI chatbots tailored for businesses. Currently, I work as a 
-                Data Quality Analyst at Scale AI, training cutting-edge AI models. 
-                Additionally, I'm passionate about educating the next generation of coders, 
-                helping students master Python and prepare for the PCEP exam.
+I'm Lannon Khau—full-stack developer and AI enthusiast at heart with a builder’s mindset. My journey in tech has been anything but ordinary. I’ve engineered AI chatbots, built automation systems, and developed financial analytics tools that process millions of transactions—all driven by my obsession with problem-solving and optimization. I thrive when I’m deep in the work, refining systems, and pushing the limits of what’s possible.
+
+But my growth isn’t just technical—it’s personal, too. I’ve faced down self-doubt, social anxiety, and the fear of stepping into the unknown. I used to think confidence was something you either had or didn’t. Now, I know it’s something you forge—through action, through presence, and through the willingness to step into discomfort and own the moment.
+
+I don’t just build products—I build myself. Every challenge, every conversation, every experience is another brick in the foundation. And I’m here to keep building.
                 </p>
             </div>
         </div>
@@ -172,28 +172,28 @@ def display_home():
     </style>
     """, unsafe_allow_html=True)
 
-    st.subheader('Career Timeline')
+    st.header('Career Timeline')
 
     # Timeline HTML
     timeline_html = """
     <div class="timeline">
         <div class="container right">
             <div class="content">
-                <h2>Data Quality Analyst at Scale AI</h2>
+                <h2>AI Trainer/ Contributor (Tier 3 Technical) Scale AI</h2>
                 <p class="date">April 2024 - Present</p>
                 <p>Training cutting-edge AI models and ensuring data quality.</p>
             </div>
         </div>
         <div class="container left">
             <div class="content">
-                <h2>Software Developer at InStack AI Solutions</h2>
+                <h2>Software Development Engineer at Creative Core</h2>
                 <p class="date">June 2022 - Present</p>
                 <p>Developing AI-powered solutions and data-driven websites.</p>
             </div>
         </div>
         <div class="container right">
             <div class="content">
-                <h2>Data Analyst at Logic Labs LLC</h2>
+                <h2>Associate Software Engineer at Bytes and Bots</h2>
                 <p class="date">May 2021 - February 2023</p>
                 <p>Conducted data analysis for business decision-making.</p>
             </div>
@@ -210,73 +210,73 @@ def display_home():
 
     st.markdown(timeline_html, unsafe_allow_html=True)
 
-    # Skills and Technologies
-    st.header('Skills & Technologies')
-    
-    skills = [
-        {
-            "category": "Programming Languages",
-            "items": [
-                {"name": "Python", "details": "4 years experience, expert in data analysis, web dev, and AI"},
-                {"name": "SQL", "details": "3 years experience, proficient in complex queries and database design"},
-                {"name": "JavaScript", "details": "2 years experience, used in web development projects"}
-            ]
-        },
-        {
-            "category": "Frameworks & Libraries",
-            "items": [
-                {"name": "Streamlit", "details": "Created 10+ data apps, including this portfolio"},
-                {"name": "TensorFlow", "details": "Implemented in 5 machine learning projects"},
-                {"name": "Pandas", "details": "Used extensively in data analysis and cleaning"}
-            ]
-        },
-        {
-            "category": "Tools & Technologies",
-            "items": [
-                {"name": "Git", "details": "Daily use for version control and collaboration"},
-                {"name": "Docker", "details": "Used for containerizing and deploying applications"},
-                {"name": "AWS", "details": "Experience with EC2, S3, and Lambda services"}
-            ]
-        }
-    ]
-
-    # Custom CSS for skills section
-    st.markdown("""
-    <style>
-    .skill-category {
-        font-size: 20px;
-        font-weight: bold;
-        margin-top: 0px;
-        margin-bottom: 10px;
-    }
-    .skill-item {
-        background-color: #E8E5DA;
-        border-radius: 10px;
-        padding: 10px;
-        margin-bottom: 10px;
-    }
-    .skill-name {
-        font-weight: bold;
-        font-size: 16px;
-    }
-    .skill-details {
-        font-size: 16px;
-        color: #555;
-        margin-top: 5px;
-    }
-    </style>
-    """, unsafe_allow_html=True)
-
-    # Display skills
-    for category in skills:
-        st.markdown(f"<div class='skill-category'>{category['category']}</div>", unsafe_allow_html=True)
-        for item in category['items']:
-            st.markdown(f"""
-            <div class="skill-item">
-                <div class="skill-name">{item['name']}</div>
-                <div class="skill-details">{item['details']}</div>
-            </div>
-            """, unsafe_allow_html=True)
+    # # Skills and Technologies
+    # st.header('Skills & Technologies')
+    #
+    # skills = [
+    #     {
+    #         "category": "Programming Languages",
+    #         "items": [
+    #             {"name": "Python", "details": "4 years experience, expert in data analysis, web dev, and AI"},
+    #             {"name": "SQL", "details": "3 years experience, proficient in complex queries and database design"},
+    #             {"name": "JavaScript", "details": "2 years experience, used in web development projects"}
+    #         ]
+    #     },
+    #     {
+    #         "category": "Frameworks & Libraries",
+    #         "items": [
+    #             {"name": "Streamlit", "details": "Created 10+ data apps, including this portfolio"},
+    #             {"name": "TensorFlow", "details": "Implemented in 5 machine learning projects"},
+    #             {"name": "Pandas", "details": "Used extensively in data analysis and cleaning"}
+    #         ]
+    #     },
+    #     {
+    #         "category": "Tools & Technologies",
+    #         "items": [
+    #             {"name": "Git", "details": "Daily use for version control and collaboration"},
+    #             {"name": "Docker", "details": "Used for containerizing and deploying applications"},
+    #             {"name": "AWS", "details": "Experience with EC2, S3, and Lambda services"}
+    #         ]
+    #     }
+    # ]
+    #
+    # # Custom CSS for skills section
+    # st.markdown("""
+    # <style>
+    # .skill-category {
+    #     font-size: 20px;
+    #     font-weight: bold;
+    #     margin-top: 0px;
+    #     margin-bottom: 10px;
+    # }
+    # .skill-item {
+    #     background-color: #E8E5DA;
+    #     border-radius: 10px;
+    #     padding: 10px;
+    #     margin-bottom: 10px;
+    # }
+    # .skill-name {
+    #     font-weight: bold;
+    #     font-size: 16px;
+    # }
+    # .skill-details {
+    #     font-size: 16px;
+    #     color: #555;
+    #     margin-top: 5px;
+    # }
+    # </style>
+    # """, unsafe_allow_html=True)
+    #
+    # # Display skills
+    # for category in skills:
+    #     st.markdown(f"<div class='skill-category'>{category['category']}</div>", unsafe_allow_html=True)
+    #     for item in category['items']:
+    #         st.markdown(f"""
+    #         <div class="skill-item">
+    #             <div class="skill-name">{item['name']}</div>
+    #             <div class="skill-details">{item['details']}</div>
+    #         </div>
+    #         """, unsafe_allow_html=True)
 
 
     # Featured Projects
@@ -284,22 +284,22 @@ def display_home():
 
     projects = [
         {
-            "title": "NASA Exoplanet Archive",
-            "image": "Exoplanets.jpg",
+            "title": "Data Forge",
+            "image": "Credit-cards.jpg",
             "description": "Analysis and visualization of exoplanet data from NASA's archive, providing insights into planetary systems beyond our solar system.",
-            "tech_stack": ["Python", "Pandas", "Tensorflow", "Scikit-learn" ,"Matplotlib", "Streamlit"]
+            "tech_stack": ["Python", "PandasAI", "OpenAI API", "Pickle", "Matplotlib", "Streamlit"]
         },
         {
-            "title": "Real Estate AI Integration",
-            "image": "Real_Estate.png",
+            "title": "Property Pulse",
+            "image": "ai_rev.jpg",
             "description": "AI-powered platform for real estate market analysis, predicting property values and identifying investment opportunities.",
             "tech_stack": ["Streamlit", "OpenAI API", "LangChain", "NL2SQL", "PostGres", "Python"]
         },
         {
-            "title": "Medical AI Diagnostics",
-            "image": "Health_AI.jpg",
+            "title": "Exo-Explorer",
+            "image": "Exoplanets.jpg",
             "description": "Machine learning model for early detection of diseases using medical imaging, improving diagnostic accuracy and speed.",
-            "tech_stack": ["Streamlit", "Python", "Postgres"]
+            "tech_stack": ["Streamlit", "Python", "Postgres", "React", "PyTorch", "Image Gen"]
         }
     ]
 

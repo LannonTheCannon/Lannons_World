@@ -37,17 +37,11 @@ def display_resume():
     #st.markdown('<h1 class="main-header">Lannon Khau - Resume</h1>', unsafe_allow_html=True)
     st.title('Lannon Khau - Resume')
     # Display resume images
-    resume_image_path_1 = os.path.join(os.path.dirname(__file__), "assets", "_assets_Lannon_Khau_Resume_1.jpg")
-    resume_image_path_2 = os.path.join(os.path.dirname(__file__), "assets", "_assets_Lannon_Khau_Resume_2.jpg")
+    resume_image_path_1 = os.path.join(os.path.dirname(__file__), "assets", "LKResume.jpg")
 
-    if os.path.exists(resume_image_path_1) and os.path.exists(resume_image_path_2):
+    if os.path.exists(resume_image_path_1):
         image1 = Image.open(resume_image_path_1)
-        st.image(image1, use_column_width=True, caption="Lannon Khau's Resume - Page 1", output_format="JPEG")
-        
-        image2 = Image.open(resume_image_path_2)
-        st.image(image2, use_column_width=True, caption="Lannon Khau's Resume - Page 2", output_format="JPEG")
-    else:
-        st.error("One or both resume images not found. Please check the file paths.")
+        st.image(image1, use_column_width=True, caption="Lannon Khau's Resume - Page 1", output_format='JPEG')
 
     # Add Download Resume button
     #st.markdown('<h2 class="section-header">Download Resume</h2>', unsafe_allow_html=True)

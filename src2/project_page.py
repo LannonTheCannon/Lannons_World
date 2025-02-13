@@ -3,7 +3,7 @@ from PIL import Image
 import os
 
 def display_projects():
-    st.title("My Projects")
+    st.title("My Projects (Under Construction)")
 
     # Custom CSS for project cards with updated color scheme
     st.markdown("""

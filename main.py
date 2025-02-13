@@ -30,7 +30,7 @@ def set_background_images(profile_pic, sidebar_bg):
     .profile-pic {{
         background-image: url("data:image/png;base64,{profile_pic_str}");
         background-size: cover;
-        background-position: center;
+        background-position: center 100%;
         width: 200px;
         height: 200px;
         border-radius: 50%;
@@ -138,7 +138,6 @@ def main():
     st.markdown(
         """
         <style>
-        /* Existing styles... */
 
         /* Style for radio buttons text */
         [data-testid="stSidebar"] .stRadio label {
@@ -214,7 +213,6 @@ def main():
             '🤖 Lannon\'s Chatbot',
             ':page_with_curl: Resume',
             ':toolbox: My Projects',
-            ':goggles: Project Showcase',
         ]
 
     selected_section = st.sidebar.radio('Navigation', sections)
@@ -227,8 +225,6 @@ def main():
         display_resume()
     elif selected_section == ':toolbox: My Projects':
         display_projects()
-    elif selected_section == ':goggles: Project Showcase':
-        display_showcase()
 
 if __name__ == "__main__":
     main()
