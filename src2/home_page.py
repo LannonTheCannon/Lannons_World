@@ -20,7 +20,7 @@ def display_contact_info():
         st.markdown("""
         <div style="background-color: #E8E5DA; padding: 20px; border-radius: 10px; margin-top: 20px;">
             <h3>Contact Information</h3>
-            <p><strong>Email:</strong> khaulannon@instack.live</p>
+            <p><strong>Email:</strong> khaulannon@gmail.com </p>
             <p><strong>Phone:</strong> (626) 977-3921</p>
             <p><strong>GitHub:</strong> <a href="https://github.com/LannonTheCannon" target="_blank">https://github.com/LannonTheCannon</a></p>
         </div>
