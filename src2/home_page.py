@@ -29,7 +29,7 @@ def display_contact_info():
 def display_home():
     # Custom CSS for the section box
     # Hero Section
-    st.title('Welcome to Lannon\'s Portfolio')
+    st.title('Welcome to Lannon\'s Story')
     st.subheader('Slow is smooth. Smooth is fast.')
 
     # Get the path to the image for the About Me section
